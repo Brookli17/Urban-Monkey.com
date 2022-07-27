@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Upi-payment.css">
+    <title>Qr-code-Upi | UrbanMonkey</title>
+</head>
+<body>
+    <div class="wrapper">
+      <header>
+        <h1> Upi-QR Code Generator</h1>
+        <p>Enter price</p>
+      </header>
+      <div class="form">
+        <input type="number" spellcheck="false" placeholder="Enter value">
+        <button>Generate QR Code</button>
+      </div>
+      <div class="qr-code">
+        <img src="" alt="qr-code">
+      </div>
+    </div>
+
+    <script>
+        const wrapper = document.querySelector(".wrapper"),
+         qrInput = wrapper.querySelector(".form input"),
+         generateBtn = wrapper.querySelector(".form button"),
+         qrImg = wrapper.querySelector(".qr-code img");
+        let preValue;
+
+     generateBtn.addEventListener("click", () => {
+         let qrValue = qrInput.value.trim();
+         if(!qrValue || preValue === qrValue) return;
+        preValue = qrValue;
+        generateBtn.innerText = "Generating QR Code...";
+        qrImg.src = `https://api.qrserver.com/v1/create-qr-code/?size=200x200&data=${qrValue}`;
+        qrImg.addEventListener("load", () => {
+        wrapper.classList.add("active");
+        generateBtn.innerText = "Generate QR Code";
+    });
+});
+
+   qrInput.addEventListener("keyup", () => {
+    if(!qrInput.value.trim()) {
+        wrapper.classList.remove("active");
+        preValue = "";
+    }
+});
+
+setTimeout(myURL, 10000);
+         function myURL()
+         {
+            window.open('Payment-Success.html', "_self" )
+
+         }
+    </script>
+
+ 
+</body>
+</html>

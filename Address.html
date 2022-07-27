@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>D-Address| UrbanMokey&reg;</title>
+    <linK  href="address.css"  rel="stylesheet" >
+</head>
+<body>
+    
+    <div class="container">
+        <h1>Shipping | UrbanMokey&reg;</h1>
+        <p>Please enter your shipping details.</p>
+        <hr />
+        <form  action="https://sheetdb.io/api/v1/dcsp05tt2da6g"  method="post" id="sheetdb-form"  >
+        <div class="form">
+        <div class="fields fields--2">
+          <label class="field">
+            <span class="field__label" for="firstname">First name</span>
+            <input class="field__input" type="text" id="firstname" value="" name="data[f-name]"  required />
+          </label>
+          <label class="field">
+            <span class="field__label" for="lastname">Last name</span>
+            <input class="field__input" type="text" id="lastname" value="" name="data[l-name]" required />
+          </label>
+        </div>
+        <label class="field">
+          <span class="field__label" for="address">Address</span>
+          <input class="field__input" type="text" id="address" name="data[address]" required />
+        </label>
+        <label class="field">
+          <span class="field__label" for="country">Country</span>
+          <select class="field__input" id="country" name="data[country]" >
+            <option value=""></option>
+            <option value="unitedstates">United States</option>
+            <option value="uk" >Uk</option>
+            <option value="Germany">Germany</option>
+            <option value="India" selected  >India</option>
+            <option value="chaina" >chaina</option>
+          </select>
+        </label>
+        <div class="fields fields--3">
+          <label class="field">
+            <span class="field__label" for="zipcode">Zip code</span>
+            <input class="field__input" type="text" id="zipcode" name="data[zipcode]" required />
+          </label>
+          <label class="field">
+            <span class="field__label" for="city">City</span>
+            <input class="field__input" type="text" id="city" name="data[city]" required />
+          </label>
+          <label class="field">
+            <span class="field__label" for="state">State</span>
+            <select class="field__input" id="state" name="data[state]" >
+              <option value="Maharastra">Maharastra</option>
+              <option value="Gujrat">Gujrat</option>
+              <option value="bangalore">bangalore</option>
+              <option value="Delhi">Delhi</option>
+              <option value="Hyderabad">Hyderabad</option>
+            </select>
+          </label>
+        </div>
+        </div>
+        <hr>
+        <a  href="2ndloadingscreen.html" ><button type="submit" class="button">Continue</button></a>
+      </div>
+    </form>
+    
+
+
+      <footer id="footer">
+        <h2>Urban | Monkey &copy; all rights reserved</h2>
+      </footer>
+
+      <script>
+
+         var form = document.getElementById('sheetdb-form');
+          form.addEventListener("submit", e => {
+          e.preventDefault();
+          fetch(form.action, {
+              method : "POST",
+              body: new FormData(document.getElementById("sheetdb-form")),
+          }).then(
+              response => response.json()
+          ).then((html) => {
+           
+            window.open('2ndloadingscreen.html', "_self");
+          
+          });
+          });
+      </script>
+    
+
+</body>
+</html>

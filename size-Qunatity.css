@@ -1,0 +1,169 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Open Sans', sans-serif;
+    box-sizing: border-box;
+  }
+  
+  body {
+    background:  DarkSlateGrey;
+    transition: 0.6s linear;
+  }
+
+  .card1{
+    width: 400px;
+    height: 180px;
+    background: white;
+    padding: 40px;
+    position: absolute;
+    border-radius: 10px;
+    left: 30%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    text-transform: uppercase;
+  }
+
+  .card2{
+    width: 400px;
+    height: 180px;
+    background: white;
+    padding: 40px;
+    position: absolute;
+    border-radius: 10px;
+    left: 70%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    text-transform: uppercase;
+  }
+
+p{
+    text-align: center;
+    font-family: "Poppins", sans-serif;
+    font-size: 25px;
+    margin-top: 150px;
+    font-weight: 600;
+    color: whitesmoke;
+}
+
+  h1{
+    text-align: center;
+    font-family: "Poppins", sans-serif;
+    font-size: 20px;
+    
+  }
+
+  button{
+      margin-top: 15px;
+      height: 35px;
+      width: 35px;
+      align-items: center;
+      background-color: gray;
+      color: black;
+      border-radius: 5px;
+      border: none;
+      font-weight: 600;
+      padding: 2px 2px 2px 2px;
+
+     
+  }
+
+  #btn1,#btn2,#btn3,#btn4{
+      margin-left: 30px;
+  }
+
+  #btn11,#btn22,#btn33,#btn44{
+    margin-left: 35px;
+}
+
+  
+
+  button:hover{
+
+       background-color: black;
+       color: whitesmoke;
+  }
+
+  .formatForButton {
+    background-color: LightGreen;
+    color: black;
+   }
+
+   #footer{
+    margin-top: 200px;
+    text-align: center;
+    background-color: #000;
+    color: whitesmoke;
+    font-size: 12px;
+    padding: 3px 3px 3px 3px;
+}
+ 
+ 
+#cheakout{
+    height: 40px;
+    width: 100px;
+    background-color: #000;
+    color: whitesmoke;
+}
+
+#cheakout:hover{
+    background-color:  gray;
+    color: black;
+}
+
+.chek-btn{
+      margin-left: 700px;
+      margin-top: 300px;
+      
+
+}
+
+@media screen and (max-width: 420px ){
+  
+  .card1{
+    margin: 0%;
+    left: 0%;
+    right: 0%;
+    display: inline-block;
+    position: relative;
+    width: 90%;
+    transform: none;
+    margin-bottom: 20px;
+    margin-top: 30px;
+    margin-left: 20px;
+  }
+  .card2{
+    margin: 0%;
+    left: 0%;
+    right: 0%;
+    display: inline-block;
+    position: relative;
+    width: 90%;
+    transform: none;
+    margin-bottom: 20px;
+    margin-left: 20px;
+}
+
+.chek-btn{
+  margin: 0%;
+  margin-left: 135px;
+  margin-right: 0%;
+}
+
+#footer{
+ 
+  margin-top: 100px;
+  
+}
+
+#btn1,#btn2,#btn3,#btn4{
+  margin-left: 23px;
+}
+
+#btn11,#btn22,#btn33,#btn44{
+  margin-left: 25px;
+}
+
+
+
+}
+ 

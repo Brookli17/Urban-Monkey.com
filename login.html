@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="hero.png">
+    <title>UrbanMokey | SignUp </title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css" />
+    <link rel="stylesheet" href="login.css" />
+</head>
+<body>
+
+   
+    <div class="container">
+        <h1>Urban | Monkey&reg;</h1>
+        <h5>SignUp</h5>
+        <form action="https://sheetdb.io/api/v1/efcfvtbsi762i" method="post" id="sheetdb-form">
+            <p>
+                <label id="lable1" for="username">Username:</label>
+                <input type="text" name="data[username]" id="username" required >
+            </p>
+            <p>
+                <label id="lable1"  for="password">Password:</label>
+                <input type="password" name="data[psw]" id="password"   required />
+                <i class="bi bi-eye-slash" id="togglePassword"></i>
+            </p>
+              
+               <a href="index.html"  target="_self" ><button type="submit" id="submit" class="submit">Log In</button></a>
+            </form>
+    </div>
+   
+
+    <script>
+
+          var form1 = document.getElementById('sheetdb-form');
+          form1.addEventListener("submit", e => {
+          e.preventDefault();
+          fetch(form1.action, {
+              method : "POST",
+              body: new FormData(document.getElementById("sheetdb-form")),
+          }).then(
+              response => response.json()
+          ).then((html) =>
+          {
+            window.open('index.html','_self')
+          });
+          
+        });
+
+    </script>
+
+    <script  src="logintoggleeye.js" ></script>
+
+    
+</body>
+</html>

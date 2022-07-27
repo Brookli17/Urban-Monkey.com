@@ -1,0 +1,169 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Open Sans', sans-serif;
+    box-sizing: border-box;
+  }
+  
+  body {
+    background:  Teal;
+    transition: 0.6s linear;
+  }
+
+  .div1{
+    width: 350px;
+    height: 200px;
+    background: white;
+    padding: 40px;
+    position: absolute;
+    border-radius: 10px;
+    left: 20%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    text-transform: uppercase;
+    
+  }
+
+  .div2{
+    width: 350px;
+    height: 200px;
+    background: white;
+    padding: 40px;
+    position: absolute;
+    border-radius: 10px;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    text-transform: uppercase;
+  }
+
+  .div3{
+    width: 350px;
+    height: 200px;
+    background: white;
+    padding: 40px;
+    position: absolute;
+    border-radius: 10px;
+    left: 80%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    text-transform: uppercase;
+  }
+
+  .div1:hover{
+    transition: transform .2s; 
+    width: 360px;
+    height: 210px;
+    box-shadow: 6px 4px 48px -3px rgba(0, 0, 0, 0.6);
+  }
+
+  .div2:hover{
+    transition: transform .2s; 
+    width: 360px;
+    height: 210px;
+    box-shadow: 6px 4px 48px -3px rgba(0, 0, 0, 0.6);
+  }
+
+  .div3:hover{
+    transition: transform .2s; 
+    width: 360px;
+    height: 210px;
+    box-shadow: 6px 4px 48px -3px rgba(0, 0, 0, 0.6);
+  }
+
+  #img1{
+     
+    height: 110px;
+    width: 210px;
+    margin-left: 22px;
+
+  }
+
+  #img2{
+    height: 120px;
+    width: 120px;
+    margin-left: 70px;
+    
+    
+  }
+
+  #img3{
+    height: 110px;
+    width: 120px;
+    margin-left: 70px;
+  }
+
+  h3{
+    text-align: center;
+    margin-bottom: 10px;
+
+  }
+  h1{
+    text-align: center;
+    margin-top: 100px;
+    
+  }
+
+  p{
+    text-align: center;
+    margin-top: 20px;
+    font-weight: 700;
+  }
+
+
+  #footer{
+    margin-top: 530px;
+    text-align: center;
+    background-color: #000;
+    color: whitesmoke;
+    font-size: 12px;
+    padding: 3px 3px 3px 3px;
+}
+
+@media screen and (max-width: 420px){
+  
+  .div1{
+    margin: 0%;
+    left: 0%;
+    right: 0%;
+    display: inline-block;
+    position: relative;
+    width: 90%;
+    transform: none;
+    margin-bottom: 20px;
+    margin-top: 30px;
+    margin-left: 20px;
+  }
+  .div2{
+    margin: 0%;
+    left: 0%;
+    right: 0%;
+    display: inline-block;
+    position: relative;
+    width: 90%;
+    transform: none;
+    margin-bottom: 20px;
+    margin-left: 20px;
+}
+.div3{
+  margin: 0%;
+  left: 0%;
+  right: 0%;
+  display: inline-block;
+  position: relative;
+  width: 90%;
+  transform: none;
+  margin-bottom: 20px;
+  margin-left: 20px;
+}
+
+
+#footer{
+ 
+  margin-top: 200px;
+  
+}
+
+}
+
+ 
