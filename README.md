@@ -1,6 +1,20 @@
-Urban-Monkey  is an online clothing store for STREETWEAR t-shirts and sweatshirts shopping , build using
-html5 , css and JavaScript and jQuery library , backend is build using rest apis which is connected to google sheet to fetch user data in the backend.....
-
+                                                     Urban-Monkey
+------------------------------------------------------------------------------------------------------------------------------------
+is an online clothing store for STREETWEAR t-shirts and sweatshirts shopping ,build using
+html5 , css and JavaScript and jQuery library .
+backend is build using rest apis which is connected to google sheet to fetch user data in the backend and post into google sheets.....
+------------------------------------------------------------------------------------------------------------------------------------
+Features of site
+->Responsive (compatible on any Screen Size)
+->New User Sign-Up Option
+->About-Us page
+->Contact-Us page
+->Shopping cart
+->Multiple Prodcuts 
+->Dedicated prodcut pages every prodcut
+->Multiple-Payment Options
+->all data saved at Google sheets 
+---------------------------------------------------------------------------------------------------------------------------------------
 Home-Page
 ![image](https://user-images.githubusercontent.com/91592513/200124470-cf57b462-7dd0-4c5f-82f5-3adc07586cd6.png)
 
