@@ -1,5 +1,4 @@
  <h1 align="center">Urban-Monkey</h1>
-------------------------------------------------------------------------------------------------------------------------------------
 is an online clothing store for STREETWEAR t-shirts and sweatshirts shopping,build using **html5 , **css and **JavaScript and **jQuery library.
 backend is build using **RestApi which is connected to **google sheet to fetch user data in the backend and post into google sheets
 ------------------------------------------------------------------------------------------------------------------------------------
@@ -15,7 +14,7 @@ Features of site
 - all data saved at Google sheets 
 ---------------------------------------------------------------------------------------------------------------------------------------
 Home-Page
-![image](https://user-images.githubusercontent.com/91592513/200124470-cf57b462-7dd0-4c5f-82f5-3adc07586cd6.png)
+![image](https://user-images.githubusercontent.com/91592513/204139422-55448690-0d4b-468a-8162-0aa668e72f72.png)
 
 Product-Page
 ![image](https://user-images.githubusercontent.com/91592513/200124499-a4f516d2-9bc6-4ea7-b1e4-50ff2907be5d.png)
