@@ -1,4 +1,4 @@
- <h1 text-align="center">Urban-Monkey</h1>
+ <h1 align="center">Urban-Monkey</h1>
 ------------------------------------------------------------------------------------------------------------------------------------
 is an online clothing store for STREETWEAR t-shirts and sweatshirts shopping ,build using
 html5 , css and JavaScript and jQuery library .
